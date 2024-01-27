@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="app">
-      <h1>Vue.js To-Do List</h1>
+      <h1>To-Do List</h1>
       <input
         type="text"
         v-model="newTask"
@@ -19,7 +19,7 @@
       <ul>
         <li v-for="(task, index) in tasks" :key="index">
           {{ task }}
-          <button class="btn-del" @click="removeTask(index)">Entfernen</button>
+          <button class="btn-del" @click="removeTask(index)">X</button>
         </li>
       </ul>
     </div>
